@@ -1,0 +1,1135 @@
+[ODBC][576][1558629415.433154][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][576][1558629415.433328][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab27044400
+[ODBC][576][1558629415.434787][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab27044400
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][576][1558629416.620597][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][576][1558629416.620796][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab27044400
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629416.622363][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600b8 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][576][1558629416.622464][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab27044400
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600d0
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629416.622731][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600d0 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][576][1558629416.622862][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab27044400
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629416.622976][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][576][1558629416.623102][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab27044400
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][576][1558629416.623432][SQLAllocHandle.c][540]
+		Entry:
+			Handle Type = 3
+			Input Handle = 0x7fab27044400
+[ODBC][576][1558629416.623718][SQLAllocHandle.c][1085]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab27058800
+[ODBC][576][1558629416.623868][SQLExecDirectW.c][177]
+		Entry:
+			Statement = 0x7fab27058800
+			SQL = [ select cast(sum(capital) as decimal(19,2)) as Capital, cast(sum(interes) as decimal(19,2)) as Interes from (
+SELECT C.ID_SOLI...][length = 1090 (SQL_NTS)]
+[ODBC][576][1558629416.889909][SQLExecDirectW.c][456]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629416.890330][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Count = 0x7ffeedeedf56
+[ODBC][576][1558629416.891736][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf56 -> 2
+[ODBC][576][1558629416.891836][SQLRowCount.c][173]
+		Entry:
+			Statement = 0x7fab27058800
+			Row Count = 0x7ffeedeedf48
+[ODBC][576][1558629416.891926][SQLRowCount.c][247]
+		Exit:[SQL_SUCCESS]
+			Row Count = 0x7ffeedeedf48 -> -1
+[ODBC][576][1558629416.892079][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Count = 0x7ffeedeedfc6
+[ODBC][576][1558629416.892210][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedfc6 -> 2
+[ODBC][576][1558629416.892293][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab27058800
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][576][1558629416.892439][SQLFetchScroll.c][356]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629416.892530][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Count = 0x7ffeedeedf16
+[ODBC][576][1558629416.892640][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf16 -> 2
+[ODBC][576][1558629416.892718][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Number = 1
+			Column Name = 0x105661f00
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x10566619a
+			Column Size = 0x1056661a0
+			Decimal Digits = 0x1056661b0
+			Nullable = 0x1056661b2
+[ODBC][576][1558629416.892948][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Capital](unicode)                
+			Data Type = 0x10566619a -> 3                
+			Column Size = 0x1056661a0 -> 19                
+			Decimal Digits = 0x1056661b0 -> 2                
+			Nullable = 0x1056661b2 -> 1
+[ODBC][576][1558629416.893036][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Number = 1
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][576][1558629416.893180][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629416.893273][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Number = 2
+			Column Name = 0x105661f00
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x105666172
+			Column Size = 0x105666178
+			Decimal Digits = 0x105666188
+			Nullable = 0x10566618a
+[ODBC][576][1558629416.893356][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Interes](unicode)                
+			Data Type = 0x105666172 -> 3                
+			Column Size = 0x105666178 -> 19                
+			Decimal Digits = 0x105666188 -> 2                
+			Nullable = 0x10566618a -> 1
+[ODBC][576][1558629416.893431][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Number = 2
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][576][1558629416.893506][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629416.893581][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Number = 1
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][576][1558629416.893653][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629416.893727][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Number = 1
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][576][1558629416.893811][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [3018458.32]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 10
+[ODBC][576][1558629416.893889][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Number = 2
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][576][1558629416.893964][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629416.894038][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab27058800
+			Column Number = 2
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][576][1558629416.894120][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [547617.75]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 9
+[ODBC][576][1558629416.894202][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab27058800
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][576][1558629416.894279][SQLFetchScroll.c][356]
+		Exit:[SQL_NO_DATA]
+[ODBC][577][1558629451.898398][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][577][1558629451.898512][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab25835a00
+[ODBC][577][1558629451.900008][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab25835a00
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][577][1558629453.177954][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][577][1558629453.178161][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25835a00
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629453.179813][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600b8 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][577][1558629453.179952][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25835a00
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600d0
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629453.180271][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600d0 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][577][1558629453.180454][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25835a00
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629453.180611][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][577][1558629453.180910][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab25835a00
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][577][1558629453.181335][SQLAllocHandle.c][540]
+		Entry:
+			Handle Type = 3
+			Input Handle = 0x7fab25835a00
+[ODBC][577][1558629453.181624][SQLAllocHandle.c][1085]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab2582f800
+[ODBC][577][1558629453.181727][SQLExecDirectW.c][177]
+		Entry:
+			Statement = 0x7fab2582f800
+			SQL = [ select cast(sum(capital) as decimal(19,2)) as Capital, cast(sum(interes) as decimal(19,2)) as Interes from (
+SELECT C.ID_SOLI...][length = 1090 (SQL_NTS)]
+[ODBC][577][1558629453.455315][SQLExecDirectW.c][456]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629453.455592][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Count = 0x7ffeedeedf56
+[ODBC][577][1558629453.457319][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf56 -> 2
+[ODBC][577][1558629453.457541][SQLRowCount.c][173]
+		Entry:
+			Statement = 0x7fab2582f800
+			Row Count = 0x7ffeedeedf48
+[ODBC][577][1558629453.457774][SQLRowCount.c][247]
+		Exit:[SQL_SUCCESS]
+			Row Count = 0x7ffeedeedf48 -> -1
+[ODBC][577][1558629453.458069][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Count = 0x7ffeedeedfc6
+[ODBC][577][1558629453.458155][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedfc6 -> 2
+[ODBC][577][1558629453.458463][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab2582f800
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][577][1558629453.458717][SQLFetchScroll.c][356]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629453.458806][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Count = 0x7ffeedeedf16
+[ODBC][577][1558629453.458941][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf16 -> 2
+[ODBC][577][1558629453.459030][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Number = 1
+			Column Name = 0x105661f00
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x10566619a
+			Column Size = 0x1056661a0
+			Decimal Digits = 0x1056661b0
+			Nullable = 0x1056661b2
+[ODBC][577][1558629453.459237][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Capital](unicode)                
+			Data Type = 0x10566619a -> 3                
+			Column Size = 0x1056661a0 -> 19                
+			Decimal Digits = 0x1056661b0 -> 2                
+			Nullable = 0x1056661b2 -> 1
+[ODBC][577][1558629453.459468][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Number = 1
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][577][1558629453.459687][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629453.459910][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Number = 2
+			Column Name = 0x105661f00
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x105666172
+			Column Size = 0x105666178
+			Decimal Digits = 0x105666188
+			Nullable = 0x10566618a
+[ODBC][577][1558629453.460157][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Interes](unicode)                
+			Data Type = 0x105666172 -> 3                
+			Column Size = 0x105666178 -> 19                
+			Decimal Digits = 0x105666188 -> 2                
+			Nullable = 0x10566618a -> 1
+[ODBC][577][1558629453.460250][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Number = 2
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][577][1558629453.460354][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629453.460416][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Number = 1
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][577][1558629453.460473][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629453.460534][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Number = 1
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][577][1558629453.460598][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [3018458.32]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 10
+[ODBC][577][1558629453.460658][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Number = 2
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][577][1558629453.460714][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629453.460820][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab2582f800
+			Column Number = 2
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][577][1558629453.460896][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [547617.75]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 9
+[ODBC][577][1558629453.460979][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab2582f800
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][577][1558629453.461069][SQLFetchScroll.c][356]
+		Exit:[SQL_NO_DATA]
+[ODBC][595][1558629614.593287][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][595][1558629614.593402][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab2582aa00
+[ODBC][595][1558629614.595114][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab2582aa00
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][595][1558629615.995986][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][595][1558629615.996170][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582aa00
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558629615.997736][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600b8 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][595][1558629615.997835][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582aa00
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600d0
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558629615.998127][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600d0 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][595][1558629615.998385][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582aa00
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558629615.998477][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][595][1558629615.998614][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab2582aa00
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][595][1558629615.998731][SQLAllocHandle.c][540]
+		Entry:
+			Handle Type = 3
+			Input Handle = 0x7fab2582aa00
+[ODBC][595][1558629615.998819][SQLAllocHandle.c][1085]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab27044600
+[ODBC][595][1558629615.998965][SQLExecDirectW.c][177]
+		Entry:
+			Statement = 0x7fab27044600
+			SQL = [ select cast(sum(capital) as decimal(19,2)) as Capital, cast(sum(interes) as decimal(19,2)) as Interes from (
+SELECT C.ID_SOLI...][length = 1090 (SQL_NTS)]
+[ODBC][595][1558629616.260075][SQLExecDirectW.c][456]
+		Exit:[SQL_SUCCESS]
+[ODBC][595][1558629616.260343][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Count = 0x7ffeedeedf56
+[ODBC][595][1558629616.261837][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf56 -> 2
+[ODBC][595][1558629616.261951][SQLRowCount.c][173]
+		Entry:
+			Statement = 0x7fab27044600
+			Row Count = 0x7ffeedeedf48
+[ODBC][595][1558629616.262072][SQLRowCount.c][247]
+		Exit:[SQL_SUCCESS]
+			Row Count = 0x7ffeedeedf48 -> -1
+[ODBC][595][1558629616.262177][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Count = 0x7ffeedeedfc6
+[ODBC][595][1558629616.262269][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedfc6 -> 2
+[ODBC][595][1558629616.262362][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab27044600
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][595][1558629616.262427][SQLFetchScroll.c][356]
+		Exit:[SQL_SUCCESS]
+[ODBC][595][1558629616.262526][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Count = 0x7ffeedeedf16
+[ODBC][595][1558629616.262591][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf16 -> 2
+[ODBC][595][1558629616.262720][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Number = 1
+			Column Name = 0x105661dc0
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x10566619a
+			Column Size = 0x1056661a0
+			Decimal Digits = 0x1056661b0
+			Nullable = 0x1056661b2
+[ODBC][595][1558629616.262809][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Capital](unicode)                
+			Data Type = 0x10566619a -> 3                
+			Column Size = 0x1056661a0 -> 19                
+			Decimal Digits = 0x1056661b0 -> 2                
+			Nullable = 0x1056661b2 -> 1
+[ODBC][595][1558629616.262875][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Number = 1
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][595][1558629616.262942][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][595][1558629616.263096][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Number = 2
+			Column Name = 0x105661dc0
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x105666172
+			Column Size = 0x105666178
+			Decimal Digits = 0x105666188
+			Nullable = 0x10566618a
+[ODBC][595][1558629616.263174][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Interes](unicode)                
+			Data Type = 0x105666172 -> 3                
+			Column Size = 0x105666178 -> 19                
+			Decimal Digits = 0x105666188 -> 2                
+			Nullable = 0x10566618a -> 1
+[ODBC][595][1558629616.263247][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Number = 2
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][595][1558629616.263323][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][595][1558629616.263399][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Number = 1
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][595][1558629616.263472][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][595][1558629616.263545][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Number = 1
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][595][1558629616.263625][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [3018458.32]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 10
+[ODBC][595][1558629616.263702][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Number = 2
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][595][1558629616.263761][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][595][1558629616.263831][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab27044600
+			Column Number = 2
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][595][1558629616.263903][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [547617.75]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 9
+[ODBC][595][1558629616.264046][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab27044600
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][595][1558629616.264112][SQLFetchScroll.c][356]
+		Exit:[SQL_NO_DATA]
+[ODBC][576][1558629692.351036][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][576][1558629692.351178][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab26857600
+[ODBC][576][1558629692.353037][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab26857600
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][576][1558629693.615254][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][576][1558629693.615590][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26857600
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629693.617116][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600b8 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][576][1558629693.617229][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26857600
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600d0
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629693.617624][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600d0 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][576][1558629693.617770][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26857600
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629693.618026][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][576][1558629693.618207][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab26857600
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][576][1558629693.618466][SQLAllocHandle.c][540]
+		Entry:
+			Handle Type = 3
+			Input Handle = 0x7fab26857600
+[ODBC][576][1558629693.618567][SQLAllocHandle.c][1085]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab27044400
+[ODBC][576][1558629693.618661][SQLExecDirectW.c][177]
+		Entry:
+			Statement = 0x7fab27044400
+			SQL = [ select cast(sum(capital) as decimal(19,2)) as Capital, cast(sum(interes) as decimal(19,2)) as Interes from (
+SELECT C.ID_SOLI...][length = 1090 (SQL_NTS)]
+[ODBC][576][1558629693.883675][SQLExecDirectW.c][456]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629693.883966][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Count = 0x7ffeedeedf56
+[ODBC][576][1558629693.885486][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf56 -> 2
+[ODBC][576][1558629693.885735][SQLRowCount.c][173]
+		Entry:
+			Statement = 0x7fab27044400
+			Row Count = 0x7ffeedeedf48
+[ODBC][576][1558629693.886117][SQLRowCount.c][247]
+		Exit:[SQL_SUCCESS]
+			Row Count = 0x7ffeedeedf48 -> -1
+[ODBC][576][1558629693.886260][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Count = 0x7ffeedeedfc6
+[ODBC][576][1558629693.886520][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedfc6 -> 2
+[ODBC][576][1558629693.886777][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab27044400
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][576][1558629693.886882][SQLFetchScroll.c][356]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629693.886972][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Count = 0x7ffeedeedf16
+[ODBC][576][1558629693.887059][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf16 -> 2
+[ODBC][576][1558629693.887212][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Number = 1
+			Column Name = 0x105661f00
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x1056661c2
+			Column Size = 0x1056661c8
+			Decimal Digits = 0x1056661d8
+			Nullable = 0x1056661da
+[ODBC][576][1558629693.887317][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Capital](unicode)                
+			Data Type = 0x1056661c2 -> 3                
+			Column Size = 0x1056661c8 -> 19                
+			Decimal Digits = 0x1056661d8 -> 2                
+			Nullable = 0x1056661da -> 1
+[ODBC][576][1558629693.887404][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Number = 1
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][576][1558629693.887564][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629693.887669][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Number = 2
+			Column Name = 0x105661f00
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x10566619a
+			Column Size = 0x1056661a0
+			Decimal Digits = 0x1056661b0
+			Nullable = 0x1056661b2
+[ODBC][576][1558629693.887763][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Interes](unicode)                
+			Data Type = 0x10566619a -> 3                
+			Column Size = 0x1056661a0 -> 19                
+			Decimal Digits = 0x1056661b0 -> 2                
+			Nullable = 0x1056661b2 -> 1
+[ODBC][576][1558629693.887968][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Number = 2
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][576][1558629693.888057][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629693.888144][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Number = 1
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][576][1558629693.888227][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629693.888312][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Number = 1
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][576][1558629693.888404][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [3018458.32]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 10
+[ODBC][576][1558629693.888493][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Number = 2
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][576][1558629693.888581][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][576][1558629693.888666][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab27044400
+			Column Number = 2
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][576][1558629693.888761][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [547617.75]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 9
+[ODBC][576][1558629693.888853][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab27044400
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][576][1558629693.888939][SQLFetchScroll.c][356]
+		Exit:[SQL_NO_DATA]
+[ODBC][577][1558629767.274237][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][577][1558629767.274953][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab27049000
+[ODBC][577][1558629767.275199][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab27049000
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][577][1558629768.846666][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][577][1558629768.846883][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab27049000
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629768.848534][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600b8 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][577][1558629768.848669][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab27049000
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600d0
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629768.849091][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x1056600d0 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][577][1558629768.849223][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab27049000
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x1056600b8
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629768.849616][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][577][1558629768.849756][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab27049000
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][577][1558629768.849900][SQLAllocHandle.c][540]
+		Entry:
+			Handle Type = 3
+			Input Handle = 0x7fab27049000
+[ODBC][577][1558629768.850025][SQLAllocHandle.c][1085]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab25836a00
+[ODBC][577][1558629768.850146][SQLExecDirectW.c][177]
+		Entry:
+			Statement = 0x7fab25836a00
+			SQL = [ select cast(sum(capital) as decimal(19,2)) as Capital, cast(sum(interes) as decimal(19,2)) as Interes from (
+SELECT C.ID_SOLI...][length = 1090 (SQL_NTS)]
+[ODBC][577][1558629769.110105][SQLExecDirectW.c][456]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629769.110323][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Count = 0x7ffeedeedf56
+[ODBC][577][1558629769.111976][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf56 -> 2
+[ODBC][577][1558629769.112125][SQLRowCount.c][173]
+		Entry:
+			Statement = 0x7fab25836a00
+			Row Count = 0x7ffeedeedf48
+[ODBC][577][1558629769.112449][SQLRowCount.c][247]
+		Exit:[SQL_SUCCESS]
+			Row Count = 0x7ffeedeedf48 -> -1
+[ODBC][577][1558629769.112651][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Count = 0x7ffeedeedfc6
+[ODBC][577][1558629769.112894][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedfc6 -> 2
+[ODBC][577][1558629769.113015][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab25836a00
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][577][1558629769.113367][SQLFetchScroll.c][356]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629769.113556][SQLNumResultCols.c][156]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Count = 0x7ffeedeedf16
+[ODBC][577][1558629769.113683][SQLNumResultCols.c][251]
+		Exit:[SQL_SUCCESS]
+			Count = 0x7ffeedeedf16 -> 2
+[ODBC][577][1558629769.114016][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Number = 1
+			Column Name = 0x105661dc0
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x10566619a
+			Column Size = 0x1056661a0
+			Decimal Digits = 0x1056661b0
+			Nullable = 0x1056661b2
+[ODBC][577][1558629769.114212][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Capital](unicode)                
+			Data Type = 0x10566619a -> 3                
+			Column Size = 0x1056661a0 -> 19                
+			Decimal Digits = 0x1056661b0 -> 2                
+			Nullable = 0x1056661b2 -> 1
+[ODBC][577][1558629769.114466][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Number = 1
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][577][1558629769.114592][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629769.114885][SQLDescribeColW.c][209]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Number = 2
+			Column Name = 0x105661dc0
+			Buffer Length = 129
+			Name Length = 0x7ffeedeede3e
+			Data Type = 0x105666172
+			Column Size = 0x105666178
+			Decimal Digits = 0x105666188
+			Nullable = 0x10566618a
+[ODBC][577][1558629769.115173][SQLDescribeColW.c][467]
+		Exit:[SQL_SUCCESS]                
+			Column Name = [Interes](unicode)                
+			Data Type = 0x105666172 -> 3                
+			Column Size = 0x105666178 -> 19                
+			Decimal Digits = 0x105666188 -> 2                
+			Nullable = 0x10566618a -> 1
+[ODBC][577][1558629769.115334][SQLColAttribute.c][294]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Number = 2
+			Field Identifier = SQL_DESC_TYPE_NAME
+			Character Attr = 0x7ffeedeede40
+			Buffer Length = 128
+			String Length = 0x7ffeedeede2e
+			Numeric Attribute = 0x7ffeedeede18
+[ODBC][577][1558629769.115561][SQLColAttribute.c][709]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629769.115791][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Number = 1
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][577][1558629769.115873][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629769.116320][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Number = 1
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][577][1558629769.116412][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [3018458.32]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 10
+[ODBC][577][1558629769.116491][SQLColAttributeW.c][156]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Number = 2
+			Field Identifier = SQL_DESC_DISPLAY_SIZE
+			Character Attr = 0x0
+			Buffer Length = 0
+			String Length = 0x0
+			Numeric Attribute = 0x7ffeedeedda8
+[ODBC][577][1558629769.116560][SQLColAttributeW.c][547]
+		Exit:[SQL_SUCCESS]
+[ODBC][577][1558629769.116628][SQLGetData.c][237]
+		Entry:
+			Statement = 0x7fab25836a00
+			Column Number = 2
+			Target Type = 1 SQL_CHAR
+			Buffer Length = 22
+			Target Value = 0x1056600d8
+			StrLen Or Ind = 0x7ffeedeede00
+[ODBC][577][1558629769.116707][SQLGetData.c][545]
+		Exit:[SQL_SUCCESS]                
+			Buffer = [547617.75]                
+			Strlen Or Ind = 0x7ffeedeede00 -> 9
+[ODBC][577][1558629769.116786][SQLFetchScroll.c][159]
+		Entry:
+			Statement = 0x7fab25836a00
+			Fetch Orentation = 1
+			Fetch Offset = 1
+[ODBC][577][1558629769.116857][SQLFetchScroll.c][356]
+		Exit:[SQL_NO_DATA]
