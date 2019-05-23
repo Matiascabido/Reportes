@@ -1,0 +1,603 @@
+[ODBC][1616][1558628523.204616][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][1616][1558628523.204912][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab26028000
+[ODBC][1616][1558628523.205022][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab26028000
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][1616][1558628524.988627][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][1616][1558628524.988840][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26028000
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][1616][1558628524.990347][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][1616][1558628524.990529][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26028000
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][1616][1558628524.990646][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][1616][1558628524.990753][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26028000
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][1616][1558628524.990851][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][1616][1558628524.991157][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab26028000
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][595][1558628538.847558][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][595][1558628538.847688][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab2582ba00
+[ODBC][595][1558628538.847962][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab2582ba00
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][595][1558628540.172478][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][595][1558628540.172700][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582ba00
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558628540.174344][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][595][1558628540.174489][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582ba00
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558628540.174811][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][595][1558628540.175197][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582ba00
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558628540.175344][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][595][1558628540.175669][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab2582ba00
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][576][1558628582.994225][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][576][1558628582.994351][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab2582fa00
+[ODBC][576][1558628582.995834][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab2582fa00
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][576][1558628584.351891][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][576][1558628584.352096][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582fa00
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558628584.353757][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][576][1558628584.353899][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582fa00
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558628584.354224][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][576][1558628584.354409][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2582fa00
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558628584.354522][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][576][1558628584.354928][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab2582fa00
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][596][1558629168.727399][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][596][1558629168.727516][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab25827200
+[ODBC][596][1558629168.727812][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab25827200
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][596][1558629170.898859][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][596][1558629170.899165][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25827200
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][596][1558629170.900857][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][596][1558629170.901116][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25827200
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][596][1558629170.901449][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][596][1558629170.901582][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25827200
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][596][1558629170.901900][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][596][1558629170.902081][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab25827200
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][595][1558629260.603652][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][595][1558629260.603813][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab26860e00
+[ODBC][595][1558629260.605235][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab26860e00
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][595][1558629261.998614][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][595][1558629262.000037][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26860e00
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558629262.000187][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][595][1558629262.000331][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26860e00
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558629262.000467][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][595][1558629262.000758][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26860e00
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][595][1558629262.001013][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][595][1558629262.001111][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab26860e00
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][576][1558629412.242808][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][576][1558629412.242929][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab26026200
+[ODBC][576][1558629412.244423][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab26026200
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][576][1558629414.265298][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][576][1558629414.266658][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26026200
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629414.266965][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][576][1558629414.267258][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26026200
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629414.267511][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][576][1558629414.267606][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26026200
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629414.267684][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][576][1558629414.267784][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab26026200
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][577][1558629447.775677][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][577][1558629447.775778][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab2704b000
+[ODBC][577][1558629447.777454][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab2704b000
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][577][1558629449.182347][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][577][1558629449.182556][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2704b000
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629449.184198][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][577][1558629449.184337][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2704b000
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629449.184706][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][577][1558629449.184934][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab2704b000
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][577][1558629449.185152][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][577][1558629449.185410][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab2704b000
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][1616][1558629607.834308][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][1616][1558629607.834585][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab26850e00
+[ODBC][1616][1558629607.835976][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab26850e00
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][1616][1558629610.363787][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][1616][1558629610.364011][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26850e00
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][1616][1558629610.365653][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][1616][1558629610.365794][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26850e00
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][1616][1558629610.366120][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][1616][1558629610.366355][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab26850e00
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][1616][1558629610.366485][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][1616][1558629610.366937][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab26850e00
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
+[ODBC][576][1558629687.780422][SQLAllocHandle.c][377]
+		Entry:
+			Handle Type = 2
+			Input Handle = 0x7fab26021a00
+[ODBC][576][1558629687.780538][SQLAllocHandle.c][493]
+		Exit:[SQL_SUCCESS]
+			Output Handle = 0x7fab25835200
+[ODBC][576][1558629687.782061][SQLDriverConnectW.c][290]
+		Entry:
+			Connection = 0x7fab25835200
+			Window Hdl = 0x0
+			Str In = [Server={fbcoprd.database.windows.net};UID={adminfbco};PWD={Fundacion#123};Database={GestionCreditosFBCO};MARS_Connection={Yes};...][length = 166]
+			Str Out = 0x0
+			Str Out Max = 0
+			Str Out Ptr = 0x7ffeedeedd4a
+			Completion = 0
+		UNICODE Using encoding ASCII 'US-ASCII' and UNICODE 'UCS-2-INTERNAL'
+
+[ODBC][576][1558629689.927464][SQLDriverConnectW.c][914]
+		Exit:[SQL_SUCCESS_WITH_INFO]                    
+			Connection Out [[NULL]]
+[ODBC][576][1558629689.927783][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25835200
+			Rec Number = 1
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629689.929322][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d070 -> 5701
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed database context to 'GestionCreditosFBCO'.]
+[ODBC][576][1558629689.929581][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25835200
+			Rec Number = 2
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d088
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629689.929699][SQLGetDiagRecW.c][596]
+		Exit:[SQL_SUCCESS]
+			SQLState = [01000]
+			Native = 0x10565d088 -> 5703
+			Message Text = [[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Changed language setting to us_english.]
+[ODBC][576][1558629689.930167][SQLGetDiagRecW.c][535]
+		Entry:
+			Connection = 0x7fab25835200
+			Rec Number = 3
+			SQLState = 0x7ffeedeedbe0
+			Native = 0x10565d070
+			Message Text = 0x7ffeedeed3d0
+			Buffer Length = 1025
+			Text Len Ptr = 0x7ffeedeed3ce
+[ODBC][576][1558629689.930305][SQLGetDiagRecW.c][596]
+		Exit:[SQL_NO_DATA]
+[ODBC][576][1558629689.930425][SQLGetInfo.c][236]
+		Entry:
+			Connection = 0x7fab25835200
+			Info Type = SQL_DBMS_VER (18)
+			Info Value = 0x7ffeedeede60
+			Buffer Length = 256
+			StrLen = 0x7ffeedeedd9c
